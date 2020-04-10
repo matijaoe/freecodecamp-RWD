@@ -83,15 +83,17 @@ header {
 
 #image {
 	max-width: 1024px;
-	width: 100%;
-	margin-bottom: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
 }
 
 #img-caption {
 	font-weight: 200;
 	font-family: "Gotu", sans-serif;
 	font-size: 0.9em;
-	padding: 0 0.4rem;
+    padding: 0 0.4rem;
+    margin: 1.5rem 0 .5rem 0;
 }
 
 #tribute-info > h3 {
