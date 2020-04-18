@@ -43,6 +43,8 @@ p {
 header {
 	text-align: center;
 	margin-top: 6rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
 
 select {
@@ -131,4 +133,11 @@ label,
 *:focus {
 	outline: 0px;
 	border: 0px;
+}
+
+@media only screen and (max-width: 480px) {
+	#survey-form {
+		padding-left: 1.4rem;
+		padding-right: 1.4rem;
+	}
 }
