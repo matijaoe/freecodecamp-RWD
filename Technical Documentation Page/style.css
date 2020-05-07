@@ -11,10 +11,14 @@ html {
 	scroll-behavior: smooth;
 }
 
+::selection {
+	background: #b3d4fc;
+}
+
 body {
 	font-size: 1.6rem;
 	line-height: 1.4;
-	color: #555;
+	color: #444;
 	background-color: #f8f8f8;
 }
 
@@ -25,15 +29,13 @@ h2 {
 	font-size: 2em;
 }
 
-a {
-	text-decoration: none;
+a:link, a:visited {
+	color: #4834d4;
 }
 
-/* main {
-	display: grid;
-	grid-template-columns: 30rem auto;
-	gap: 1rem;
-} */
+a:hover, a:active {
+	color: #6150da;
+}
 
 #navbar {
 	min-width: 30rem;
@@ -80,20 +82,18 @@ a {
 
 .nav-link:link,
 .nav-link:visited {
+	text-decoration: none;
 	color: unset;
 	transition: all 150ms;
+	width: 100%;
+	display: block;
+	padding: 1.2rem 3rem;
 }
 
 .nav-link:hover,
 .nav-link:active {
 	color: black;
 	transform: translateX(2.5rem) scale(1.1);
-}
-
-.nav-link {
-	width: 100%;
-	display: block;
-	padding: 1.2rem 3rem;
 }
 
 .sections-wrapper {
