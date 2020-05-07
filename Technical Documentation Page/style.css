@@ -13,8 +13,7 @@ html {
 body {
 	font-size: 1.6rem;
 	line-height: 1.4;
-	color: #444;
-	font-weight: 400;
+	color: #555;
 	background-color: #f8f8f8;
 }
 
@@ -42,10 +41,8 @@ main {
 #navbar {
 	border-right: 0.3rem solid gray;
 	overflow: auto;
-    width: 30rem;
+	width: 30rem;
 }
-
-
 
 #navbar header {
 	position: fixed;
@@ -98,7 +95,7 @@ main {
 	margin-bottom: 3rem;
 }
 
-.main-section header ~ * {
+.main-section header ~ p {
 	margin-left: 2rem;
 	margin-bottom: 1.5rem;
 }
@@ -107,15 +104,20 @@ main {
 	margin-bottom: 1.5rem;
 }
 
-.main-section p {
-	/* background-color: hotpink; */
-}
-
 .main-section ul {
 	margin-left: 8rem;
-	/* background-color: salmon; */
 }
 
 .main-section ul li {
+	margin-top: 1rem; /* top and bottom margin collapse together */
+}
+
+code {
+	white-space: pre-line;
+	display: block;
+	font-size: 0.9em;
+	padding: 1.2em 1.4em;
+	margin-left: 3rem;
 	margin-bottom: 1rem;
+	background-color: #f0f0f0;
 }
