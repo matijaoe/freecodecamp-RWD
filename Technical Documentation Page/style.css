@@ -115,7 +115,7 @@ a:active {
 }
 
 .sections-wrapper {
-	margin-left: 33rem;
+	margin-left: 32rem;
 	padding: 3rem;
 }
 
@@ -151,7 +151,7 @@ code {
 	padding: 1.2em 1.4em;
 	margin-left: 3rem;
 	margin-bottom: 1rem;
-	background-color: #f0f0f0;
+	background-color: #f1f1f1d8;
 }
 
 /* UNDERLINE ANIMATION FOR THE LINK (from CodePen) */
