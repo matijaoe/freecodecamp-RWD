@@ -20,9 +20,9 @@ html {
 body {
 	font-size: 1.6rem;
 	line-height: 1.4;
-	color: #444;
+	color: #3a3939;
 	background-color: #f8f8f8;
-	-webkit-font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased; /* for the link, dont know what it does */
 }
 
 h1,
@@ -53,10 +53,8 @@ a:active {
 	top: 0;
 	left: 0;
 
-	border-right: 0.1rem dashed #cecdcd;
+	border-right: 0.1rem dashed #bebebe;
 	background-color: #f8f8f8;
-	
-
 }
 
 #navbar header {
@@ -85,22 +83,26 @@ a:active {
 	line-height: 1.2;
 	font-size: 1.1em;
 
-	height: 91%;
+	height: 88%;
 	overflow-y: auto;
 	overflow-x: hidden;
-	scrollbar-color: #cecdcd #ebe9e9;
+	scrollbar-color: #bebebe #ebe9e9;
 	scrollbar-width: thin;
 }
 
+.nav-list:hover .nav-link:not(:hover) {
+	color: #bebebe;
+}
+
 .nav-list li {
-	border-top: 0.1rem dashed #cecdcd;
+	border-top: 0.1rem dashed #bebebe;
 }
 
 .nav-link:link,
 .nav-link:visited {
 	text-decoration: none;
 	color: unset;
-	transition: all 150ms;
+	transition: transform 150ms, color 300ms;
 	width: 100%;
 	display: block;
 	padding: 1.2rem 3rem;
@@ -108,8 +110,8 @@ a:active {
 
 .nav-link:hover,
 .nav-link:active {
-	color: black;
-	transform: translateX(2.2rem) scale(1.05);
+	color: #222;
+	transform: translateX(1.8rem) scale(1.05);
 }
 
 .sections-wrapper {
