@@ -8,17 +8,39 @@
 	--heading-light: #222;
 	--gray-light1: #bebebe;
 	--gray-light2: #ebe9e9;
+	--gray-light3: #afafaf;
 	--code-light: #f1f1f1d8;
 
 	--bg-dark: #1f1f1f;
 	--text-dark: #dedede;
 	--heading-dark: #e0e0e0;
-	--gray-dark1: #585d5f;
+	--gray-dark1: #3c4042;
 	--gray-dark2: #3c4042;
+	--gray-dark3: #7c7c7c;
 	--code-dark: none;
 
 	--link-blue1: #557eca;
 	--link-blue2: #4164a5;
+
+	--color0-light: slategray;
+	--color1-light: #999;
+	--color2-light: #905;
+	--color3-light: #2e6caa;
+	--color4-light: #da4247;
+	--color5-light: #bd7018;
+	--color6-light: #c060c2;
+	--color7-light: #248148;
+	--color8-light: #157775;
+
+	--color0-dark: #999;
+	--color1-dark: #ccc;
+	--color2-dark: #e2777a;
+	--color3-dark: #6196cc;
+	--color4-dark: #f08d49;
+	--color5-dark: #f8c555;
+	--color6-dark: #cc99cd;
+	--color7-dark: #7ec699;
+	--color8-dark: #67cdcc;
 }
 
 .light-theme {
@@ -27,9 +49,21 @@
 	--heading: var(--heading-light);
 	--gray1: var(--gray-light1);
 	--gray2: var(--gray-light2);
+	--gray3: var(--gray-light3);
 	--link-line: var(--link-blue1);
 	--link-text: var(--link-blue2);
 	--code-bg: var(--code-light);
+	--code-text: black;
+
+	--color0: var(--color0-light);
+	--color1: var(--color1-light);
+	--color2: var(--color2-light);
+	--color3: var(--color3-light);
+	--color4: var(--color4-light);
+	--color5: var(--color5-light);
+	--color6: var(--color6-light);
+	--color7: var(--color7-light);
+	--color8: var(--color8-light);
 }
 
 .dark-theme {
@@ -38,9 +72,21 @@
 	--heading: var(--heading-dark);
 	--gray1: var(--gray-dark1);
 	--gray2: var(--gray-dark2);
+	--gray3: var(--gray-dark3);
 	--link-line: var(--js-yellow);
 	--link-text: var(--js-yellow);
 	--code-bg: var(--code-dark);
+	--code-text: white;
+
+	--color0: var(--color0-dark);
+	--color1: var(--color1-dark);
+	--color2: var(--color2-dark);
+	--color3: var(--color3-dark);
+	--color4: var(--color4-dark);
+	--color5: var(--color5-dark);
+	--color6: var(--color6-dark);
+	--color7: var(--color7-dark);
+	--color8: var(--color8-dark);
 }
 
 *,
@@ -57,7 +103,6 @@ html {
 	font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
 	scroll-behavior: smooth;
 	scrollbar-width: thin;
-
 }
 
 ::selection {
@@ -134,7 +179,7 @@ h1 {
 }
 
 .nav-list:hover .nav-link:not(:hover) {
-	color: var(--gray1);
+	color: var(--gray3);
 }
 
 .nav-list li {
@@ -195,6 +240,7 @@ code {
 	margin-left: 3rem;
 	margin-bottom: 1rem;
 	background-color: var(--code-bg);
+	color: var(--code-text);
 }
 
 /* UNDERLINE ANIMATION FOR THE LINK (from CodePen) */
@@ -206,23 +252,13 @@ code {
 	position: relative;
 }
 .underline span {
-	background-image: -webkit-gradient(
-		linear,
-		left bottom,
-		left top,
-		from(var(--line)),
-		to(var(--line))
-	);
 	background-image: linear-gradient(0deg, var(--line) 0%, var(--line) 100%);
 	background-position: 100% 100%;
 	background-repeat: no-repeat;
 	background-size: var(--background-size, 100%) 1px;
-	-webkit-transition: background-size 0.2s linear
-		var(--background-delay, 0.15s);
 	transition: background-size 0.2s linear var(--background-delay, 0.15s);
 	font-size: 16px;
 	line-height: 20px;
-	-webkit-transform: translateZ(0);
 	transform: translateZ(0);
 }
 .underline svg {
@@ -241,8 +277,6 @@ code {
 	stroke: var(--line);
 	stroke-dasharray: 7.95 30;
 	stroke-dashoffset: var(--stroke-dashoffset, 46);
-	-webkit-transition: stroke-dashoffset var(--stroke-duration, 0.15s)
-		var(--stroke-easing, linear) var(--stroke-delay, 0s);
 	transition: stroke-dashoffset var(--stroke-duration, 0.15s)
 		var(--stroke-easing, linear) var(--stroke-delay, 0s);
 }
