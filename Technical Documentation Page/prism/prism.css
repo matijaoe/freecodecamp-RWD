@@ -6,9 +6,6 @@ https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javasc
  * @author Lea Verou
  */
 
-:root {
-}
-
 code[class*="language-"],
 pre[class*="language-"] {
 	font-family: Consolas, monospace;
