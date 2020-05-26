@@ -140,19 +140,26 @@ section {
 	padding: 5em 0.5em;
 }
 
-#projects {
+.projects {
 	background: var(--bg-blue);
 }
 
-#projects h2 {
+
+.title-box {
+	width: 90%;
+	text-align: center;
+	margin: 0 auto 1.5em;
+
+}
+
+.projects h2 {
+	display: inline-block;
 	font-size: 2.2em;
+	font-weight: 600;
+
 	color: var(--white);
 	border-bottom: 2px solid var(--white);
-	width: max-content;
-	padding: 0.1em 0.2em;
-	margin: 0 auto;
-	font-weight: 600;
-	margin-bottom: 1.5em;
+	padding-bottom: .1em;
 }
 
 .projects-grid {
@@ -196,7 +203,7 @@ section {
 
 .project-tile:hover {
 	transform: scale(1.02);
-	box-shadow: .7rem .7rem 0rem 0 rgba(0, 0, 0, 0.18),
+	box-shadow: 0.7rem 0.7rem 0rem 0 rgba(0, 0, 0, 0.18),
 		1.4rem 1.4rem 0rem 0 rgba(0, 0, 0, 0.15);
 }
 .project-tile:hover span {
@@ -307,7 +314,7 @@ section {
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 900px) {
-	#projects h2 {
+	.projects h2 {
 		font-size: 2em;
 	}
 }
@@ -353,7 +360,11 @@ section {
 	}
 	h1 {
 		font-size: 2.8em;
-		hyphens: auto;
+		overflow-wrap: break-word;
+	}
+
+	h2 {
+		overflow-wrap: break-word;
 	}
 	#navbar {
 		justify-content: center;
